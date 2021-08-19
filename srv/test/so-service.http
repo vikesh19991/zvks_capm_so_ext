@@ -1,0 +1,16 @@
+#-------------------------------------------------------------
+# Service Home
+#-------------------------------------------------------------
+### Positive: Service Catalog
+GET http://localhost:4004/SalesOrderSRV
+
+### Positive: Service Metadata
+GET http://localhost:4004/SalesOrderSRV/$metadata
+
+#-------------------------------------------------------------
+# SalesOrderItemSet
+#-------------------------------------------------------------
+### Positive: Get Top 11 Sales Order
+GET http://localhost:4004/SalesOrderSRV/SalesOrderItemSet 
+###?$top=11
+
